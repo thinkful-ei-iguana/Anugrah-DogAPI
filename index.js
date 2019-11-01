@@ -21,6 +21,7 @@ function getDogImages() {
 
 function displayPics(responseJson) {
     let imgArr = responseJson.message;
+    console.log(imgArr);
     $('.picList').empty();
     for (let i=0; i < imgArr.length; i++) {
     $('.picList').append(
